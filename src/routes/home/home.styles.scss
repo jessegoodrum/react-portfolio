@@ -1,0 +1,42 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        .picture{
+            margin-top: 3em;
+            margin-bottom: 3em;
+            height: 40em;
+        }
+
+        .about-me-container{
+            width: 150vh;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 5em;
+            
+            background-color: #D4E7E0;
+            border-radius: 5em;
+
+                .image{
+                    width: 60vh;
+                    height: 60vh;
+                    border-radius: 50%;
+
+                }
+
+                .text-container{
+                    width: 75vh;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: center;
+                    margin-left: 25vh;
+                    
+                }
+        }
+}
+
