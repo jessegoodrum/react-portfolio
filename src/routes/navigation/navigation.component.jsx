@@ -38,7 +38,7 @@ export default function Navigation(){
                 </div>
                 
                 
-                
+                <h1 className='logo'>&lt; Jesse Goodrum / &gt;</h1>
                
 
                 <div className='social-media-links-container'>

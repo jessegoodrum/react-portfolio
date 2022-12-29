@@ -14,10 +14,12 @@ nav{
   padding: 1em;
   border-radius: 20px;
 
-  .logo-container{
+  .logo{
    
-    font-size: 1.5em;
+    font-size: 4.5vw;
     font-family: 'Urbanist';
+    color: #1A2D34;
+    margin-left: 4%;
     display: flex;
     align-items: center;
  
@@ -28,18 +30,20 @@ nav{
     justify-content: space-around;
     align-items: center;
     margin-right: 1%;
+    
 
     a{
       margin: 20%;
-      font-size: 2em;
+      font-size: 2.5vw;
+      color: #1A2D34;
     }
   }
   
 }
 
 .burger-menu{
-  height: 100%;
-  width: 4em;
+  height: 3vw;
+  width: 4vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -47,22 +51,23 @@ nav{
   cursor: pointer;
 
   .burger-bar {
-    width: 4em;
-    height: 0.5em;
+    width: 4vw;
+    height: 0.5vw;
     background-color: #58DAA2;
-    border-radius: 0.5em;
+    border-radius: 0.5vw;
   }
   
 }
 
 .burger-background{
-  height: 20em;
-  width: 20em;
-  margin-top: -13em;
-  margin-left: -7em;
-  border: 5px solid #1A2D34;
+  height: 20vw;
+  width: 20vw;
+  margin-top: -13vw;
+  margin-left: -7vw;
+  border: .4vw solid #1A2D34;;
   background-color: #D4E7E0;
-  border-radius: 50%;
+  border-radius: 50vw;
+  
   
 
 }
@@ -72,31 +77,33 @@ nav{
 
 
 .menu{
-  width: 15em;
-  height: 15em;
-  border: 5px solid #1A2D34;
-  border-radius: 50%;
-  margin-top: -.5em;
-  margin-left: 2em;
+  width: 18%;
+  height: 18%;
+  border: .3vw solid #1A2D34;
+  border-radius: 5vw;
+  margin-top: -.5vw;
+  margin-left: 2vw;
   background-color: #D4E7E0;
   position: absolute;
-  top: 1;
   display: flex;
-  justify-content:center;
-  align-items:center;
+
 
   ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;  
+    justify-content: center;
+
+    font-size: 1.5vw;
   }
 
 
   li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     list-style:none;
-    margin: 1em;
-    margin-right: 3.5em;
+    margin: .5vw;
   }
   li:hover{
     text-decoration: underline;
@@ -140,7 +147,7 @@ nav{
 
 
 .burger-bar.clicked:nth-child(1){
-  transform: rotate(45deg) translate(0.75em, 1.25em);
+  transform: rotate(45deg) translate(0.75vw, 1.25vw);
   transition: ease-out 0.5s;
 }
 
@@ -150,7 +157,7 @@ nav{
 }
 
 .burger-bar.clicked:nth-child(3){
-  transform: rotate(135deg) translate(-0.5em, 1em);
+  transform: rotate(135deg) translate(-0.5vw, 1vw);
   transition: ease-out 0.5s;
 }
 
@@ -159,5 +166,35 @@ nav{
 .burger-bar.unclicked {
   transform: rotate(0) translate(0);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+@media only screen and (max-width: 780px){
+
+  .burger-background{
+    display: none;
+  }
+
+  // .menu{
+  //   width: 20vw;
+  //   height: 20vw;
+  //   border: .3vw solid #1A2D34;
+  //   border-radius: 50vw;
+  //   margin-top: -.5vw;
+  //   margin-left: 2vw;
+  //   background-color: #D4E7E0;
+  //   position: absolute;
+  
+  //   display: flex;
+  //   justify-content:center;
+  //   align-items:center;
+  
+  //   ul{
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: space-around;  
+  //   }
+  // }
+  
 }
 

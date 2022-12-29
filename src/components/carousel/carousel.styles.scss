@@ -1,0 +1,42 @@
+.carousel{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .carousel-image{
+        width: 40vw;
+        height: 40vw;
+        border: .4vw solid #1A2D34;
+        border-radius: 10%;
+    }
+    
+    .button{
+        padding: .1vw .8vw;
+        border-radius: 10%;
+        border: .2vw solid #1A2D34;;
+        background-color: #D4E7E0;
+        margin: .8vw;
+        font-size: 2vw;
+    
+        .button:hover {
+            background-color: #ddd;
+            color: black;
+          }
+    
+        .previous {
+            background-color: #f1f1f1;
+            color: black;
+          }
+          
+          .next {
+            background-color: #04AA6D;
+            color: white;
+          }
+          
+          
+    }
+
+
+}
+
