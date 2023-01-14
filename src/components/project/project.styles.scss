@@ -7,4 +7,23 @@
     flex-direction: column;
     align-items: center;
     padding: 3%;
+
+    .project-header{
+        font-size: 20em;
+    }
+
+    .project-subheading{
+        font-size: 8em;
+        display: flex;
+    }
+
+    .project-description{
+        font-size: 6em;
+    }
+
+    .project-roles{
+        font-size: 6em;
+    }
+
+    
 }

@@ -17,10 +17,7 @@ export default function Home(){
                 <div className='text-container'>
                     <h1>Hello! <br /> My name is Jesse Goodrum</h1>
                     <h1>I'm a Full Stack Developer based in Seattle, WA</h1>
-                    <p> I recently got into web development in early 2022 and have since found my passion.
-                    I have always been a creative, and interested in technology. In 2022 I gradutated an accelerated 
-                    full stack web development program through Merit America, and have since had my nose to the grindstone learning
-                    all that I can about web development.</p>
+                    <p> I recently discovered a passion for web development and have been actively pursuing it since early 2022. My skills include Java, JavaScript, SQL, React, Redux, Bootstrap, HTML5, CSS, Spring Boot, PostgreSQL, and JUnit. I have a creative mindset and an interest in technology and recently graduated from an accelerated full stack web development program through Merit America. I am continuously learning and improving my skills in my field..</p>
                 </div>
 
             </div>

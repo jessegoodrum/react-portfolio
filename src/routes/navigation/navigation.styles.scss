@@ -1,200 +1,130 @@
-*{
-  margin :0; 
+* {
+  margin: 0;
   box-sizing: border-box;
-  
 }
 
-
-
-nav{
+nav {
   width: 100%;
-  height: 5em;
   display: flex;
-  justify-content:space-between;
-  padding: 1em;
-  border-radius: 20px;
+  justify-content: space-between;
 
-  .logo{
-   
+  .logo {
     font-size: 4.5vw;
-    font-family: 'Urbanist';
-    color: #1A2D34;
-    margin-left: 4%;
-    display: flex;
-    align-items: center;
- 
+    font-family: "Urbanist";
+    color: #1a2d34;
   }
 
-  .social-media-links-container{
+  .social-media-links-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-right: 1%;
-    
 
-    a{
+    a {
       margin: 20%;
       font-size: 2.5vw;
-      color: #1A2D34;
+      color: #1a2d34;
     }
   }
-  
-}
 
-.burger-menu{
-  height: 3vw;
-  width: 4vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  cursor: pointer;
-
-  .burger-bar {
+  .burger-menu {
+    height: 3vw;
     width: 4vw;
-    height: 0.5vw;
-    background-color: #58DAA2;
-    border-radius: 0.5vw;
-  }
-  
-}
-
-.burger-background{
-  height: 20vw;
-  width: 20vw;
-  margin-top: -13vw;
-  margin-left: -7vw;
-  border: .4vw solid #1A2D34;;
-  background-color: #D4E7E0;
-  border-radius: 50vw;
-  
-  
-
-}
-
-
-
-
-
-.menu{
-  width: 18%;
-  height: 18%;
-  border: .3vw solid #1A2D34;
-  border-radius: 5vw;
-  margin-top: -.5vw;
-  margin-left: 2vw;
-  background-color: #D4E7E0;
-  position: absolute;
-  display: flex;
-
-
-  ul{
+    margin: 1.5vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
 
+    .burger-bar {
+      width: 4vw;
+      height: 0.5vw;
+      background-color: #58daa2;
+      border-radius: 0.5vw;
+    }
+  }
+}
+.menu {
+  
+  border: .2vw solid #1a2d34;
+  border-radius: 2vw;
+  // margin-top: -.5vw;
+  // margin-left: 2vw;
+  background-color: #d4e7e0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    padding: 1em;
     font-size: 1.5vw;
   }
 
+  li {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 
-  li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style:none;
-    margin: .5vw;
+    list-style: none;
+    margin: 0.5vw;
   }
-  li:hover{
+  li:hover {
     text-decoration: underline;
     text-decoration-style: wavy;
   }
 
   animation: animate 1s ease-in-out;
-  
-  @keyframes animate {
-    0% {
-        transform: translateY(-50px);
-    }
+}
 
-    50% {
-        transform: translateY(40px);
-    }
+@keyframes animate {
+  0% {
+    transform: translateY(-50px);
+  }
 
-    70% {
-      transform: translateY(0px);
+  50% {
+    transform: translateY(40px);
+  }
+
+  70% {
+    transform: translateY(0px);
   }
 
   80% {
     transform: translateY(10px);
-}
-
-    100% {
-        transform: translateY(0px);
-    }
-}
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .hidden {
   display: none;
 }
 
-.visible {
-  display: flex;
-  justify-content: center;
-}
-
-
-
-.burger-bar.clicked:nth-child(1){
+.burger-bar.clicked:nth-child(1) {
   transform: rotate(45deg) translate(0.75vw, 1.25vw);
   transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(2){
+.burger-bar.clicked:nth-child(2) {
   transform: scale(0.1);
   transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(3){
+.burger-bar.clicked:nth-child(3) {
   transform: rotate(135deg) translate(-0.5vw, 1vw);
   transition: ease-out 0.5s;
 }
 
-
-
 .burger-bar.unclicked {
   transform: rotate(0) translate(0);
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-@media only screen and (max-width: 780px){
-
-  .burger-background{
-    display: none;
+@media (max-width: 768px) {
+  .menu {
   }
-
-  // .menu{
-  //   width: 20vw;
-  //   height: 20vw;
-  //   border: .3vw solid #1A2D34;
-  //   border-radius: 50vw;
-  //   margin-top: -.5vw;
-  //   margin-left: 2vw;
-  //   background-color: #D4E7E0;
-  //   position: absolute;
-  
-  //   display: flex;
-  //   justify-content:center;
-  //   align-items:center;
-  
-  //   ul{
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     justify-content: space-around;  
-  //   }
-  // }
-  
 }
-

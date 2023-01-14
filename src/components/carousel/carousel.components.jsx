@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import YoutubeEmbed from '../embed/YouTubeEmbed.components';
 import "./carousel.styles.scss"
 
 const Carousel = (props) => {
@@ -50,7 +49,7 @@ const Carousel = (props) => {
       <button className='button previous round' onClick={handlePrevClick}>&#8249;</button>
       <button className='button next round' onClick={handleNextClick}>&#8250;</button>
       </div>
-      <YoutubeEmbed embedId={props.embedId} />
+      
     </div>
   );
 }
