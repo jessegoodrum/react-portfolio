@@ -1,29 +1,78 @@
 .project-container{
     background-color: #324349 ;
-    margin: 5%;
-    margin-left: 26%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: 1px solid black;
+    margin: 5vw;
+    width: 100%;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'head head'
+    'left right'
+    'bottom bottom';
+    // flex-direction: column;
+    // align-items: center;
     padding: 3%;
 
-    .project-header{
-        font-size: 20em;
-    }
+        .headings{
 
-    .project-subheading{
-        font-size: 8em;
-        display: flex;
-    }
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            grid-area: head;
+            
+            .project-header{
+                font-size: 3em; 
+            }
+        
+            .project-subheading{
+                font-size: 1em;
+                
+            }
 
-    .project-description{
-        font-size: 6em;
-    }
+        }
 
-    .project-roles{
-        font-size: 6em;
-    }
+    // .main{
+
+    //     display: flex;}
+        
+
+        .left-side{
+            grid-area: left;
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            margin: 5vw;
+    
+            .project-description{
+                font-size: 1em;
+            }
+        
+            .project-roles{
+                font-size: 1em;
+            }
+        }
+    
+        .right-side{
+            grid-area: right;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        }
+
+        .carousel{
+            grid-area: bottom;
+        }
+        
+
+
+    
+
+    
+
+    
 
     
 }

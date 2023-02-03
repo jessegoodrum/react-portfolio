@@ -11,17 +11,26 @@ export default function Project({headline, subheading, description, roles,  embe
 
     return(
         <div className='project-container'>
-            <h1 className='project-header'>{headline}</h1>
-            <p className='project-subheading'>{subheading} </p>
-            <p className='project-description'>{description}</p>
-            <ul className='project-roles'>
-            <strong>Roles and Contributions</strong>
-                {roles.map((role) => {
-                   return <li>{role}</li>
-                })}
-            </ul>
+            <div className='headings'>
+                <h1 className='project-header'>{headline}</h1>
+                <h3 className='project-subheading'>{subheading} </h3>
+            </div>
+            <div className='main'>
+                <div className='left-side'>
+                <p className='project-description'>{description}</p>
+                <ul className='project-roles'>
+                <strong>Roles and Contributions</strong>
+                    {roles.map((role) => {
+                    return <li>{role}</li>
+                    })}
+                </ul>
+                </div>
+            <div className='right-side'>
+                <YoutubeEmbed className = "youtube"embedId={embedId} />
+            </div>
+            
+            </div>
             <Carousel className= "carousel" images = {images} embedId = {embedId} /> 
-            <YoutubeEmbed className = "youtube"embedId={embedId} />
         </div>
 
     )

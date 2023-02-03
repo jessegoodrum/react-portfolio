@@ -59,7 +59,7 @@ export default function Navigation() {
           </li>
           <li>
             {" "}
-            <Link className="nav-link" to="/resume">
+            <Link className="nav-link" to="/contact">
               &lt; CONTACT / &gt;
             </Link>{" "}
           </li>

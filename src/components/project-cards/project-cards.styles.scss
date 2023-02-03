@@ -1,0 +1,71 @@
+.project-page-heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 5em;
+}
+
+.project-cards-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2em;
+    
+    }
+    
+    .project-card {
+    width: 70%;
+    margin: 5em;
+    text-align: center;
+    padding: 1.5em;
+    border: 2px solid #1a2d34;
+    border-radius: 1em;
+    
+    .project-title {
+    font-size: 3.5em;
+    margin-bottom: 0.2em;
+    
+    }
+    
+    .project-subheading {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #1a2d34;
+    }
+
+    .project-button {
+        width: 20%;
+        height: 50px;
+        border-radius: 1em;
+        margin-bottom: 1em;
+        background-color: #58daa2;
+        .project-link {
+            display: block;
+            font-size: 1.2em;
+            margin: .3em;
+            font-family: "Urbanist";
+            }
+    }
+    
+    
+    
+    .project-image {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 1em;
+    }
+    
+    .project-description {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    }
+
+    .project-points{
+        font-size: 1.2em;
+    }
+    
+    .project-video-link {
+    font-size: 1.2em;
+    }
+    }
