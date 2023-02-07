@@ -46,11 +46,10 @@ nav {
   }
 }
 .menu {
-  
+  width: 20%;
+  max-width: 600px;
   border: .2vw solid #1a2d34;
   border-radius: 2vw;
-  // margin-top: -.5vw;
-  // margin-left: 2vw;
   background-color: #d4e7e0;
   position: absolute;
   display: flex;
@@ -64,10 +63,6 @@ nav {
   }
 
   li {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-
     list-style: none;
     margin: 0.5vw;
   }
@@ -116,15 +111,5 @@ nav {
 
 .burger-bar.clicked:nth-child(3) {
   transform: rotate(135deg) translate(-0.5vw, 1vw);
-  transition: ease-out 0.5s;
-}
-
-.burger-bar.unclicked {
-  transform: rotate(0) translate(0);
-  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-}
-
-@media (max-width: 768px) {
-  .menu {
-  }
+  transition: ease-out 0.5
 }
