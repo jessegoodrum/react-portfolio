@@ -69,3 +69,43 @@
     font-size: 1.2em;
     }
     }
+
+    @media (max-width: 767px) {
+        .project-page-heading {
+          font-size: 2em;
+        }
+      
+        .project-card {
+          width: 90%;
+          margin: 1em;
+      
+          .project-title {
+            font-size: 2em;
+          }
+      
+          .project-subheading {
+            font-size: 1em;
+          }
+      
+          .project-button {
+            width: 40%;
+      
+            .project-link {
+              font-size: 1em;
+            }
+          }
+      
+          .project-description {
+            font-size: 1.2em;
+          }
+      
+          .project-points {
+            font-size: 1em;
+          }
+      
+          .project-video-link {
+            font-size: 1em;
+          }
+        }
+      }
+      

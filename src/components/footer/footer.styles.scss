@@ -16,12 +16,36 @@
         flex-direction: column;
         justify-content: center;
         margin-left: 3em;
+        font-size: 1em;
         
     }
 
     .right-contents{
         display: flex;
-        align-items: flex-end;
+        align-items: center;
+        justify-content: center;
         margin-right: 3em;
+        font-size: 1rem;
     }
 }
+
+@media (max-width: 767px) {
+    .footer-container {
+      height: auto;
+      margin-top: 10vh;
+  
+      .left-contents {
+        margin-left: 0;
+        padding: 1em;
+        font-size: 0.4em;
+      }
+  
+      .right-contents {
+        margin-right: 0;
+        padding: 1em;
+        font-size: 0.4em;
+        align-items: flex-end;
+      }
+    }
+  }
+  
