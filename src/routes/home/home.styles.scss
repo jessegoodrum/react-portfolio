@@ -41,10 +41,11 @@
                         align-items: center;
                         flex-direction: column;
                         justify-content: center;
-                        margin-top: 1.5em;
+                        margin: 1.2em;
                             .about-header{
                                 font-size: 5vw;
-                                    @media screen and (max-width: 365px) {font-size: 2.9vw;}
+                                    @media screen and (max-width: 490px) {
+                                        font-size: 3.5vw;}
                             }
                         }
 
